@@ -1,0 +1,319 @@
+/* StructFlow workbench · restrained blue accent on anthracite / neutral white surfaces. */
+@import "tailwindcss";
+@plugin "tailwindcss-animate";
+@import "leaflet/dist/leaflet.css";
+@import "../styles/themes/primitives.css";
+@import "../styles/themes/structflow-dark.css";
+@import "../styles/themes/structflow-light.css";
+@import "../styles/themes/component-mappings.css";
+@import "../styles/themes/legacy-aliases.css";
+
+@custom-variant dark (&:is([data-theme='structflow-dark'] *));
+
+@theme {
+  --font-sans: var(--sf-font-sans);
+  --font-mono: var(--sf-font-mono);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  /* Compatibility palette: legacy Tailwind utility usage resolves to semantic graphite/status colors. */
+  --color-zinc-950: var(--sf-bg-canvas);
+  --color-zinc-900: var(--sf-bg-app);
+  --color-zinc-800: var(--sf-surface-1);
+  --color-zinc-700: var(--sf-surface-2);
+  --color-zinc-600: var(--sf-surface-3);
+  --color-zinc-500: var(--sf-text-muted);
+  --color-zinc-400: var(--sf-text-secondary);
+  --color-zinc-300: var(--sf-silver-300);
+  --color-zinc-200: var(--sf-silver-100);
+  --color-zinc-100: var(--sf-text-primary);
+  --color-zinc-50: var(--sf-text-primary);
+  --color-slate-950: var(--sf-bg-canvas);
+  --color-slate-900: var(--sf-bg-app);
+  --color-slate-800: var(--sf-surface-1);
+  --color-slate-700: var(--sf-surface-2);
+  --color-slate-600: var(--sf-surface-3);
+  --color-slate-500: var(--sf-text-muted);
+  --color-slate-400: var(--sf-text-secondary);
+  --color-slate-300: var(--sf-silver-300);
+  --color-slate-200: var(--sf-silver-100);
+  --color-slate-100: var(--sf-text-primary);
+  --color-slate-50: var(--sf-text-primary);
+  --color-blue-500: var(--sf-action-primary);
+  --color-blue-400: var(--sf-blue-400);
+  --color-blue-300: var(--sf-action-primary-hover);
+  --color-sky-500: var(--sf-action-primary);
+  --color-sky-400: var(--sf-action-primary-hover);
+  --color-sky-300: var(--sf-action-primary-hover);
+  --color-sky-200: var(--sf-action-primary-hover);
+  --color-cyan-100: var(--sf-status-info);
+  --color-cyan-200: var(--sf-status-info);
+  --color-cyan-300: var(--sf-status-info);
+  --color-cyan-400: var(--sf-status-info);
+  --color-emerald-500: var(--sf-status-success);
+  --color-emerald-400: var(--sf-status-success);
+  --color-emerald-300: var(--sf-status-success);
+  --color-green-500: var(--sf-status-success);
+  --color-amber-500: var(--sf-status-warning);
+  --color-amber-400: var(--sf-status-warning);
+  --color-amber-300: var(--sf-status-warning);
+  --color-amber-100: var(--sf-status-warning);
+  --color-yellow-500: var(--sf-status-warning);
+  --color-red-500: var(--sf-status-danger);
+  --color-red-400: var(--sf-status-danger);
+  --color-red-300: var(--sf-status-danger);
+  --color-red-200: var(--sf-status-danger);
+  --color-rose-500: var(--sf-status-danger);
+  --color-rose-400: var(--sf-status-danger);
+  --color-rose-300: var(--sf-status-danger);
+  --color-rose-200: var(--sf-status-danger);
+  --color-rose-100: var(--sf-status-danger);
+  --color-rose-950: var(--sf-status-danger-bg);
+  --color-cyan-500: var(--sf-status-info);
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+}
+
+@layer base {
+  * { border-color: var(--sf-border-default); }
+  html { background: var(--sf-bg-app); color: var(--sf-text-primary); font-family: var(--sf-font-sans); font-size: 16px; line-height: 1.5; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
+  body { background: var(--sf-bg-app); color: var(--sf-text-primary); font-family: inherit; font-size: var(--sf-font-size-md); line-height: var(--sf-line-md); user-select: none; }
+  button, input, textarea, select { font: inherit; }
+  h1, h2, h3, h4 { color: var(--sf-text-primary); font-weight: var(--sf-weight-semibold); letter-spacing: var(--sf-tracking-tight); }
+  small { color: var(--sf-text-muted); }
+  [data-theme='structflow-dark'] button:active { transform: none !important; }
+  [data-theme='structflow-dark'] [class*='backdrop-blur'] { backdrop-filter: none !important; }
+  [data-theme='structflow-dark'] [class*='active:scale']:active,
+  [data-theme='structflow-dark'] [class*='active:translate']:active { transform: none !important; }
+  [data-theme='structflow-dark'] [class*='shadow-'] { box-shadow: none !important; }
+  input, textarea, select, [contenteditable='true'], .select-text { user-select: text; }
+  canvas { user-select: none; }
+  ::selection { background: var(--sf-selection-window); color: var(--sf-text-primary); }
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-track { background: var(--sf-bg-app); }
+  ::-webkit-scrollbar-thumb { background: var(--sf-border-strong); border: 2px solid var(--sf-bg-app); border-radius: 4px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--sf-text-muted); }
+  * { scrollbar-width: thin; scrollbar-color: var(--sf-border-strong) var(--sf-bg-app); }
+}
+
+/* Splash and project loading keep their original sequencing without using gradients or glow. */
+.splash-root, .project-load-root { background: var(--sf-bg-app) !important; color: var(--sf-text-primary); }
+.splash-root { animation: sf-splash-enter 260ms cubic-bezier(0.2, 0, 0, 1) both; }
+.splash-root.splash-exit { animation: sf-splash-exit 420ms cubic-bezier(0.2, 0, 0, 1) both; }
+.splash-ambient { display: none; }
+.splash-logo-glow { display: none; }
+.splash-logo-ring { display: none; }
+.splash-brand { animation: sf-splash-brand-in 420ms cubic-bezier(0.16, 1, 0.3, 1) 40ms both; }
+.splash-logo-svg { position: relative; animation: sf-splash-logo-in 460ms cubic-bezier(0.16, 1, 0.3, 1) 90ms both; }
+.splash-progress-shimmer { position: absolute; inset: 0; background: var(--sf-action-primary); opacity: 0.2; transform: translateX(-100%); animation: sf-progress-sweep 1.25s ease-in-out infinite; }
+.project-load-backdrop { position: absolute; inset: 0; background: var(--sf-bg-app); opacity: 0.82; animation: sf-load-backdrop 280ms ease-out both; }
+.project-load-stage { animation: sf-project-stage-in 360ms cubic-bezier(0.16, 1, 0.3, 1) both; }
+.project-load-in { animation: sf-load-in 360ms cubic-bezier(0.2, 0, 0, 1) both; }
+.project-load-header.project-load-in { animation-delay: 40ms; }
+.project-load-preview-wrap.project-load-in { animation-delay: 110ms; }
+.project-load-footer.project-load-in { animation-delay: 180ms; }
+.splash-brand { display: flex; align-items: center; gap: 1.25rem; user-select: none; }
+.splash-logo-wrap { position: relative; display: flex; align-items: center; justify-content: center; width: 5rem; height: 5rem; }
+.splash-logo-svg { width: 3.5rem; height: 3.5rem; filter: none; }
+.splash-separator { width: 1px; height: 3rem; background: var(--sf-divider); }
+.splash-text { display: flex; flex-direction: column; justify-content: center; }
+.splash-title { color: var(--sf-text-primary); font-size: 1.875rem; font-weight: 600; letter-spacing: -0.025em; line-height: 1.2; }
+.splash-title-accent { color: var(--sf-action-primary); }
+.splash-subtitle { margin-top: 2px; color: var(--sf-text-muted); font-size: var(--sf-font-size-xs); font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; }
+.splash-progress-track { position: absolute; right: 0; bottom: 0; left: 0; height: 2px; overflow: hidden; background: var(--sf-bg-disabled); }
+.splash-progress-fill { height: 100%; background: var(--sf-action-primary); transition: width 180ms cubic-bezier(0.2, 0, 0, 1); }
+.project-load-panel { background: var(--sf-bg-panel); border: 1px solid var(--sf-border-subtle); border-radius: 0.5rem; }
+.project-load-header { min-height: 68px; padding: 14px 16px; border-bottom: 1px solid var(--sf-divider); }
+.project-load-logo, .project-load-type { background: var(--sf-bg-panel-raised); border: 1px solid var(--sf-border-subtle); }
+.project-load-preview-wrap { position: relative; height: clamp(320px, calc(100vh - 270px), 660px); margin: 12px 12px 0; overflow: hidden; border: 1px solid var(--sf-border-subtle); border-radius: 0.375rem; background: var(--sf-bg-canvas); }
+.project-load-preview, .project-load-preview > * { width: 100%; height: 100%; }
+.project-load-preview-label { position: absolute; top: 12px; left: 12px; padding: 6px 9px; border: 1px solid var(--sf-border-subtle); border-radius: 0.25rem; background: var(--sf-bg-panel); color: var(--sf-text-secondary); font-size: var(--sf-font-size-xs); font-weight: 500; letter-spacing: 0.04em; }
+.project-load-footer { padding: 18px; }
+.project-load-status, .project-load-preview-empty { color: var(--sf-text-muted); }
+.project-load-status-dot { width: 6px; height: 6px; border-radius: 9999px; background: var(--sf-action-primary); }
+.project-load-progress { height: 3px; overflow: hidden; background: var(--sf-bg-disabled); }
+.project-load-progress-indicator { height: 100%; width: 34%; background: var(--sf-action-primary); transform: translateX(-110%); animation: sf-project-progress 1.1s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+.project-load-progress.is-ready .project-load-progress-indicator { width: 100%; transform: translateX(0); animation: none; transition: width 220ms cubic-bezier(0.2, 0, 0, 1); }
+
+/* Asset and inline toolbar icons share one theme-aware interaction layer. */
+[data-structflow-toolbar] .sf-toolbar-icon { color: currentColor; opacity: 0.9; transition: color 150ms ease-out, opacity 150ms ease-out; }
+[data-structflow-toolbar] button:hover .sf-toolbar-icon,
+[data-structflow-toolbar] button:focus-visible .sf-toolbar-icon,
+[data-structflow-toolbar] button[aria-pressed='true'] .sf-toolbar-icon { opacity: 1; }
+[data-structflow-toolbar] .sf-toolbar-inline-icon [fill='#ffffff'] { fill: var(--sf-text-primary); }
+[data-structflow-toolbar] .sf-toolbar-inline-icon [fill='#D5D9DC'] { fill: var(--sf-text-primary); }
+[data-structflow-toolbar] .sf-toolbar-inline-icon [fill='#9AA2A6'] { fill: var(--sf-text-secondary); }
+[data-structflow-toolbar] .sf-toolbar-inline-icon [fill='#6E767C'] { fill: var(--sf-text-muted); }
+[data-structflow-toolbar] .sf-toolbar-inline-icon [fill='#4B5563'] { fill: var(--sf-text-disabled); }
+[data-structflow-toolbar] .sf-toolbar-inline-icon [fill='#3F464B'] { fill: var(--sf-surface-4); }
+[data-structflow-toolbar] .sf-toolbar-inline-icon [fill='#2CF2DC'] { fill: var(--sf-action-primary-hover); }
+[data-structflow-toolbar] .sf-toolbar-inline-icon [fill='#F59E0B'] { fill: var(--sf-status-warning); }
+[data-structflow-toolbar] .sf-toolbar-inline-icon [stroke='#ffffff'] { stroke: var(--sf-text-primary); }
+[data-structflow-toolbar] .sf-toolbar-inline-icon [stroke='#18181b'] { stroke: var(--sf-bg-canvas); }
+[data-structflow-toolbar] .sf-toolbar-inline-icon [stroke='#D5D9DC'] { stroke: var(--sf-text-primary); }
+[data-structflow-toolbar] .sf-toolbar-inline-icon [stroke='#9AA2A6'] { stroke: var(--sf-text-secondary); }
+[data-structflow-toolbar] .sf-toolbar-inline-icon [stroke='#6E767C'] { stroke: var(--sf-text-muted); }
+[data-structflow-toolbar] .sf-toolbar-inline-icon [stroke='#4B5563'] { stroke: var(--sf-text-disabled); }
+[data-structflow-toolbar] .sf-toolbar-inline-icon [stroke='#2CF2DC'] { stroke: var(--sf-action-primary-hover); }
+[data-structflow-toolbar] .sf-toolbar-inline-icon [stroke='#F59E0B'] { stroke: var(--sf-status-warning); }
+[data-structflow-toolbar] .sf-toolbar-inline-icon [stroke='#27272a'] { stroke: var(--sf-border-strong); }
+[data-structflow-toolbar] svg { color: var(--sf-text-secondary); }
+[data-structflow-toolbar] { font-variant-numeric: tabular-nums; }
+
+@keyframes sf-splash-enter { from { opacity: 0; } to { opacity: 1; } }
+@keyframes sf-splash-exit { from { opacity: 1; } to { opacity: 0; } }
+@keyframes sf-splash-brand-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes sf-splash-logo-in { from { opacity: 0; transform: scale(0.82); } to { opacity: 1; transform: scale(1); } }
+@keyframes sf-progress-sweep { from { transform: translateX(-100%); } to { transform: translateX(100%); } }
+@keyframes sf-load-backdrop { from { opacity: 0; } to { opacity: 0.82; } }
+@keyframes sf-load-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes sf-project-stage-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes sf-project-progress { from { transform: translateX(-110%); } to { transform: translateX(300%); } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; } }
+
+/* Phone-safe layout primitives.  The workspaces own their scroll regions, so
+ * the document itself must not introduce a second viewport or horizontal
+ * rubber-band scroll on touch devices. */
+.scrollbar-none { scrollbar-width: none; -ms-overflow-style: none; }
+.scrollbar-none::-webkit-scrollbar { display: none; }
+
+@media (max-width: 767px) {
+  html,
+  body {
+    min-width: 0;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    overscroll-behavior: none;
+  }
+
+  .splash-brand {
+    max-width: calc(100vw - 2rem);
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .splash-logo-wrap { width: 4.5rem; height: 4.5rem; }
+  .splash-logo-svg { width: 3rem; height: 3rem; }
+  .splash-separator { width: 4rem; height: 1px; }
+  .splash-title { font-size: 1.5rem; }
+  .splash-subtitle { font-size: var(--sf-font-size-xs); letter-spacing: 0.12em; white-space: nowrap; }
+
+  .project-load-stage { width: min(100%, calc(100vw - 1rem)); }
+  .project-load-preview-wrap { height: min(42svh, 320px); margin: 0.5rem 0.5rem 0; }
+  .project-load-header { min-height: 56px; padding: 10px 12px; }
+  .project-load-footer { padding: 12px; }
+  .project-load-footer > div:first-child { align-items: flex-start; flex-direction: column; gap: 0.75rem; }
+  .project-load-status { align-self: flex-start; }
+}
+
+@media (orientation: landscape) and (max-height: 520px) {
+  .splash-brand { flex-direction: row; gap: 0.75rem; padding: 0.5rem; }
+  .splash-logo-wrap { width: 3.5rem; height: 3.5rem; }
+  .splash-logo-svg { width: 2.5rem; height: 2.5rem; }
+  .splash-separator { width: 1px; height: 2.25rem; }
+  .splash-title { font-size: 1.25rem; }
+  .splash-subtitle { font-size: var(--sf-font-size-xs); }
+}
+
+/* Engineering workbench tokens stay semantic so dense result tables do not
+ * introduce a second visual language into the existing StructFlow theme. */
+:root {
+  --sf-engineering-accent: var(--sf-status-info);
+  --sf-engineering-surface: var(--sf-bg-panel);
+  --sf-engineering-surface-raised: var(--sf-bg-panel-raised);
+  --sf-engineering-border: var(--sf-border-subtle);
+}
+
+.sf-engineering-tabular { font-variant-numeric: tabular-nums; }
+
+/* Dense engineering forms share one alignment contract. Keep these classes
+ * structural only: component/state colors stay owned by the theme tokens and
+ * the calculation layer is unaffected. */
+.sf-form-field {
+  display: grid;
+  min-width: 0;
+  align-content: start;
+  gap: 0.3rem;
+}
+
+.sf-form-label-row {
+  display: flex;
+  min-height: 1.1rem;
+  min-width: 0;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.5rem;
+  line-height: 1.05rem;
+}
+
+.sf-form-label-row > :first-child {
+  min-width: 0;
+}
+
+.sf-form-label-row--double {
+  min-height: 2.1rem;
+}
+
+.sf-form-control,
+.sf-form-field :is(input, select, [data-slot='select-trigger']) {
+  min-height: 2rem;
+}
+
+.sf-form-helper {
+  min-height: 1.05rem;
+  line-height: 1.05rem;
+}
+
+.sf-form-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  align-items: start;
+}
+
+.sf-form-card {
+  border: 1px solid var(--sf-border-subtle);
+  border-radius: 0.5rem;
+  background: color-mix(in srgb, var(--sf-bg-panel) 76%, transparent);
+  padding: 0.75rem;
+}
+
+/* Critical engineering labels must remain legible on laptops and projected
+ * jury screens even where legacy component markup still carries dense 7–10px
+ * utility classes. The workbench floor is 12px; primary values remain larger. */
+.sf-engineering-tabular [class*="text-[7px]"],
+.sf-engineering-tabular [class*="text-[8px]"],
+.sf-engineering-tabular [class*="text-[9px]"],
+.sf-engineering-tabular [class*="text-[10px]"] {
+  font-size: 0.75rem !important;
+  line-height: 1.05rem !important;
+}
+
+/* The compatibility palette maps zinc-600/700 to graphite surfaces for
+ * backgrounds. In the results panel those utilities are used for captions,
+ * so keep them readable against the dark panel background. */
+.sf-engineering-tabular .text-zinc-500,
+.sf-engineering-tabular .text-zinc-600,
+.sf-engineering-tabular .text-zinc-700 {
+  color: var(--sf-text-secondary);
+}

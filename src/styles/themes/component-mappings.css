@@ -1,0 +1,170 @@
+:root[data-theme='structflow-dark'],
+:root[data-theme='structflow-light'] {
+  --background: var(--sf-bg-app);
+  --foreground: var(--sf-text-primary);
+  --card: var(--sf-bg-panel);
+  --card-foreground: var(--sf-text-primary);
+  --popover: var(--sf-bg-panel-raised);
+  --popover-foreground: var(--sf-text-primary);
+  --primary: var(--sf-action-primary);
+  --primary-foreground: var(--sf-text-on-accent);
+  --secondary: var(--sf-bg-input);
+  --secondary-foreground: var(--sf-text-primary);
+  --muted: var(--sf-surface-2);
+  --muted-foreground: var(--sf-text-muted);
+  --accent: var(--sf-bg-selected);
+  --accent-foreground: var(--sf-text-primary);
+  --destructive: var(--sf-status-danger);
+  --destructive-foreground: var(--sf-text-on-accent);
+  --border: var(--sf-border-default);
+  --input: var(--sf-border-default);
+  --ring: var(--sf-border-focus);
+  --radius: var(--sf-radius-sm);
+}
+
+[data-slot='button'] {
+  transition-property: background-color, border-color, color, opacity, box-shadow;
+  transition-duration: 120ms;
+}
+
+[data-slot='input'],
+[data-slot='select-trigger'] {
+  min-height: var(--sf-control-height-md);
+  border-color: var(--sf-border-default);
+  border-radius: var(--sf-radius-sm);
+  background: var(--sf-bg-input);
+  color: var(--sf-text-primary);
+  font-size: var(--sf-font-size-sm);
+  line-height: var(--sf-line-sm);
+}
+
+[data-slot='input']::placeholder {
+  color: var(--sf-text-muted);
+}
+
+[data-slot='card'],
+[data-slot='dialog-content'],
+[data-slot='popover-content'],
+[data-slot='select-content'] {
+  border-color: var(--sf-border-default);
+  background: var(--sf-bg-panel);
+  color: var(--sf-text-primary);
+  box-shadow: var(--sf-shadow-panel);
+}
+
+[data-slot='dialog-content'],
+[data-slot='popover-content'],
+[data-slot='select-content'] {
+  background: var(--sf-bg-panel-raised);
+  box-shadow: var(--sf-shadow-overlay);
+}
+
+[data-slot='card-title'],
+[data-slot='dialog-title'],
+[data-slot='sheet-title'],
+[data-slot='popover-title'] {
+  color: var(--sf-text-primary);
+  font-weight: var(--sf-weight-semibold);
+  letter-spacing: var(--sf-tracking-tight);
+}
+
+[data-slot='card-description'],
+[data-slot='dialog-description'],
+[data-slot='sheet-description'],
+[data-slot='popover-description'] {
+  color: var(--sf-text-muted);
+}
+
+[data-slot='separator'] {
+  background: var(--sf-divider);
+}
+
+[data-slot='button'][data-variant='default'],
+[data-slot='button'].bg-primary {
+  background: var(--sf-control-primary-bg);
+  color: var(--sf-text-on-accent);
+}
+
+[data-slot='button'][data-variant='default']:hover,
+[data-slot='button'].bg-primary:hover {
+  background: var(--sf-control-primary-hover);
+}
+
+[data-slot='button'][data-variant='default']:active,
+[data-slot='button'].bg-primary:active {
+  background: var(--sf-control-primary-pressed);
+  transform: none;
+}
+
+:where(button, input, textarea, select, a, [role], [tabindex]):focus,
+:where(button, input, textarea, select, a, [role], [tabindex]):focus-visible {
+  outline: none !important;
+  outline-offset: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Focus stays inside the control instead of drawing an extra frame around it. */
+[data-slot='input']:focus-visible,
+[data-slot='select-trigger']:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  border-color: var(--sf-border-strong) !important;
+}
+/* Geometry selection owns the input border even while the field has focus. */
+[data-slot='input'][data-geometry-selected='true'] {
+  border-color: var(--sf-geometry-field-color) !important;
+  border-width: 1.5px !important;
+}
+
+[data-slot='button']:focus-visible,
+[data-slot='tabs-trigger']:focus-visible,
+button:focus-visible,
+[role='button']:focus-visible {
+  box-shadow: none !important;
+}
+
+/* Native selects are still used in a few dense engineering editors. Keep their
+ * closed and opened states on the same light/dark surface system. */
+select {
+  border-color: var(--sf-border-default);
+  background-color: var(--sf-bg-input);
+  color: var(--sf-text-primary);
+  color-scheme: light dark;
+}
+
+:root[data-theme='structflow-dark'] select { color-scheme: dark; }
+:root[data-theme='structflow-light'] select { color-scheme: light; }
+
+select option,
+select optgroup {
+  background: var(--sf-bg-panel-raised);
+  color: var(--sf-text-primary);
+}
+
+[data-slot='select-content'] {
+  border-color: var(--sf-border-default);
+  background: var(--sf-bg-panel-raised);
+  color: var(--sf-text-primary);
+}
+
+[data-slot='select-item'] {
+  color: var(--sf-text-secondary);
+}
+
+[data-slot='select-item']:focus,
+[data-slot='select-item'][data-highlighted] {
+  background: var(--sf-bg-hover);
+  color: var(--sf-text-primary);
+}
+
+[data-slot='select-item'][data-selected] {
+  background: var(--sf-action-primary-subtle);
+  color: var(--sf-text-primary);
+}
+
+[data-structflow-command-bar] [data-command-input]:focus,
+[data-structflow-command-bar] [data-command-input]:focus-visible {
+  border-color: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+}

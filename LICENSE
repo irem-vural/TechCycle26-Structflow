@@ -1,0 +1,60 @@
+TechCycle26-Structflow Proprietary License
+
+Copyright (c) 2026 TechCycle26-Structflow project authors.
+All Rights Reserved.
+
+1. Ownership
+
+All source code, documentation, original visual assets, project files, and other
+original material in this repository (collectively, the "Software") are
+protected by applicable copyright and other intellectual property laws.
+
+2. No License Grant
+
+Except for rights that may be required by the terms of service of the platform
+hosting this repository, no license or permission is granted to any person or
+entity to use, copy, reproduce, modify, adapt, merge, publish, distribute,
+sublicense, sell, commercialize, deploy, host, or create derivative works from
+the Software, in whole or in part, without prior written permission from the
+copyright holder.
+
+Public availability of this repository is provided for inspection,
+demonstration, evaluation, review, and collaboration purposes only. Public
+visibility does not constitute an open-source license or a waiver of any
+rights.
+
+3. Contributions
+
+Submitting a contribution, issue, pull request, suggestion, or other material
+does not by itself grant a license to the Software or to any other material in
+this repository. Contribution rights must be addressed separately where
+applicable.
+
+4. Third-Party Materials
+
+Third-party software, libraries, fonts, media, data, or other materials are not
+licensed under this document. They remain subject to their respective license
+terms, notices, attribution requirements, and usage conditions. See the
+third-party notices maintained under docs/legal/ for the software dependency
+inventory.
+
+5. Permission Requests
+
+Any use not expressly permitted above requires prior written authorization from
+the copyright holder. Permission and commercial licensing requests should be
+directed to the repository owner.
+
+6. No Warranty
+
+THE SOFTWARE IS PROVIDED "AS IS" AND WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR
+A PARTICULAR PURPOSE, ACCURACY, NON-INFRINGEMENT, OR FITNESS FOR ENGINEERING OR
+CONSTRUCTION USE.
+
+7. Limitation of Liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE COPYRIGHT HOLDER AND
+CONTRIBUTORS SHALL NOT BE LIABLE FOR ANY CLAIM, DAMAGE, LOSS, OR OTHER LIABILITY
+ARISING FROM OR RELATED TO THE SOFTWARE OR ITS USE.
+
+For avoidance of doubt: all rights not expressly granted are reserved.

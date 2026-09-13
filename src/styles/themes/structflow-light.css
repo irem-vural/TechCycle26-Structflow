@@ -1,0 +1,68 @@
+:root[data-theme='structflow-light'] {
+  color-scheme: light;
+
+  --sf-bg-app: #f3f4f6;
+  --sf-bg-canvas: #fafafa;
+  --sf-bg-titlebar: #ffffff;
+  --sf-bg-toolbar: #ffffff;
+  --sf-bg-sidebar: #f7f7f8;
+  --sf-bg-panel: #ffffff;
+  --sf-bg-panel-raised: #fafafa;
+  --sf-bg-input: #ffffff;
+  --sf-bg-hover: #f0f1f3;
+  --sf-bg-selected: #e7edf8;
+  --sf-bg-pressed: #dce5f4;
+  --sf-bg-disabled: #eceef1;
+  --sf-bg-overlay: rgb(20 22 27 / 30%);
+  --sf-surface-1: #f7f7f8;
+  --sf-surface-2: #eff0f2;
+  --sf-surface-3: #e2e4e8;
+  --sf-surface-4: #c9cdd4;
+
+  --sf-border-subtle: #e0e2e6;
+  --sf-border-default: #cfd3d9;
+  --sf-border-strong: #aeb4bd;
+  --sf-border-active: #4b6eaf;
+  --sf-border-focus: #4b6eaf;
+  --sf-divider: #e0e2e6;
+
+  --sf-text-primary: #202226;
+  --sf-text-secondary: #4d535c;
+  --sf-text-muted: #646c76;
+  --sf-text-disabled: #9299a3;
+  --sf-text-inverse: #ffffff;
+  --sf-text-on-accent: #ffffff;
+  --sf-text-link: #365d9f;
+
+  --sf-action-primary: #4b6eaf;
+  --sf-action-primary-hover: #3d5f9d;
+  --sf-action-primary-pressed: #31518a;
+  --sf-action-primary-subtle: #e8edf7;
+  --sf-control-primary-bg: #4b6eaf;
+  --sf-control-primary-hover: #3d5f9d;
+  --sf-control-primary-pressed: #31518a;
+
+  --sf-status-success: #337451;
+  --sf-status-success-bg: #e9f3ed;
+  --sf-status-warning: #895f1e;
+  --sf-status-warning-bg: #f6efdf;
+  --sf-status-danger: #a9424a;
+  --sf-status-danger-bg: #f7e8e9;
+  --sf-status-info: #386d92;
+  --sf-status-info-bg: #e8eff4;
+  --sf-status-analytical: #665d7e;
+  --sf-status-analytical-bg: #eeecf2;
+
+  --sf-mix-binder: #4b6eaf;
+  --sf-mix-water: #2f7f79;
+  --sf-mix-aggregate: #8b6842;
+  --sf-mix-other: #8b929c;
+
+  /* Tailwind compatibility tokens named "silver" are used as text colors. */
+  --sf-silver-100: #2f3339;
+  --sf-silver-300: #555b64;
+  --sf-blue-400: #4b6eaf;
+  --sf-selection-window: rgb(75 110 175 / 20%);
+  --sf-shadow-panel: 0 10px 28px rgb(24 28 35 / 8%);
+  --sf-shadow-overlay: 0 18px 48px rgb(24 28 35 / 14%);
+}

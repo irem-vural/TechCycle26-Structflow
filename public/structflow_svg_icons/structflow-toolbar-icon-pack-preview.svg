@@ -1,0 +1,317 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1492" height="1054" viewBox="0 0 1492 1054">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="40%" r="75%">
+      <stop offset="0" stop-color="#17191D"/>
+      <stop offset="1" stop-color="#0B0C0E"/>
+    </radialGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#17191D"/>
+      <stop offset="1" stop-color="#0B0C0E"/>
+    </linearGradient>
+    
+  
+    <linearGradient id="concrete" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F5F5F6"/>
+      <stop offset="0.55" stop-color="#C7C8CC"/>
+      <stop offset="1" stop-color="#67696F"/>
+    </linearGradient>
+    <linearGradient id="concreteSide" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#D7D8DB"/>
+      <stop offset="1" stop-color="#535B68"/>
+    </linearGradient>
+    <linearGradient id="tealLine" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7294EC"/>
+      <stop offset="1" stop-color="#3D6FE8"/>
+    </linearGradient>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="0.9" flood-color="#7294EC" flood-opacity="0.55"/>
+    </filter>
+    <style>
+      .teal{stroke:#7294EC;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;fill:none;}
+      .thin{stroke:#D7D8DB;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round;fill:none;}
+      .dash{stroke:#A7ABB2;stroke-width:2;stroke-dasharray:4 5;stroke-linecap:round;fill:none;}
+      .white{stroke:#D7D8DB;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;fill:none;}
+      .concreteStroke{stroke:#D7D8DB;stroke-width:1.7;stroke-linejoin:round;}
+      .rebar{stroke:#D7D8DB;stroke-width:2.2;stroke-linecap:round;}
+      .speck{fill:#636872;opacity:.7;}
+    </style>
+  
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bgGlow)"/>
+  <g transform="translate(38 47)">
+    <path d="M0 38 L32 19 L64 38 L64 76 L32 95 L0 76 Z" fill="none" stroke="#3D6FE8" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M47 29 L20 47 L46 61 L19 78" fill="none" stroke="#7294EC" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="81" y="65" fill="#F5F5F6" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="50" font-weight="700">Struct<tspan fill="#7294EC">Flow</tspan></text>
+    <line x1="350" y1="10" x2="350" y2="86" stroke="#3D6FE8" stroke-width="2" opacity=".8"/>
+    <text x="376" y="36" fill="#7294EC" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25" font-weight="800" letter-spacing="1.6">BUILDING MODULE</text>
+    <text x="376" y="67" fill="#C7C8CC" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25" letter-spacing="1.9">TOOLBAR ICON PACK</text>
+  </g>
+  <line x1="38" y1="154" x2="1450" y2="154" stroke="#3D6FE8" stroke-width="1.5" opacity=".85"/>
+
+  <g transform="translate(52 206)">
+    <rect width="170" height="198" rx="8" fill="url(#cardGrad)" stroke="#373C45" stroke-width="1.4"/>
+    <g transform="translate(53 31)">
+      
+  <path class="teal" filter="url(#softGlow)" d="M16 10 L50 32 L35 36 L42 53 L34 56 L27 39 L17 48 Z"/>
+
+    </g>
+    <text x="85.0" y="172" text-anchor="middle" fill="#D7D8DB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25">Seç</text>
+  </g>
+
+  <g transform="translate(247 206)">
+    <rect width="170" height="198" rx="8" fill="url(#cardGrad)" stroke="#373C45" stroke-width="1.4"/>
+    <g transform="translate(53 31)">
+      
+  <path class="teal" filter="url(#softGlow)" d="M32 9 V55 M32 9 L23 18 M32 9 L41 18 M32 55 L23 46 M32 55 L41 46"/>
+  <path class="teal" filter="url(#softGlow)" d="M9 32 H55 M9 32 L18 23 M9 32 L18 41 M55 32 L46 23 M55 32 L46 41"/>
+  <path class="thin" d="M27 32 H37 M32 27 V37"/>
+
+    </g>
+    <text x="85.0" y="172" text-anchor="middle" fill="#D7D8DB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25">Taşı</text>
+  </g>
+
+  <g transform="translate(442 206)">
+    <rect width="170" height="198" rx="8" fill="url(#cardGrad)" stroke="#373C45" stroke-width="1.4"/>
+    <g transform="translate(53 31)">
+      
+  <path class="dash" d="M16 10 V54 M32 10 V54 M48 10 V54 M10 16 H54 M10 32 H54 M10 48 H54"/>
+  <g filter="url(#softGlow)">
+    <circle cx="16" cy="16" r="3.4" fill="none" stroke="#7294EC" stroke-width="2.7"/>
+    <circle cx="48" cy="16" r="3.4" fill="none" stroke="#7294EC" stroke-width="2.7"/>
+    <circle cx="16" cy="48" r="3.4" fill="none" stroke="#7294EC" stroke-width="2.7"/>
+    <circle cx="48" cy="48" r="3.4" fill="none" stroke="#7294EC" stroke-width="2.7"/>
+  </g>
+
+    </g>
+    <text x="85.0" y="172" text-anchor="middle" fill="#D7D8DB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25">Aks</text>
+  </g>
+
+  <g transform="translate(637 206)">
+    <rect width="170" height="198" rx="8" fill="url(#cardGrad)" stroke="#373C45" stroke-width="1.4"/>
+    <g transform="translate(53 31)">
+      
+  <polygon points="27,20 42,13 52,19 37,27" fill="url(#concrete)" class="concreteStroke"/>
+  <polygon points="27,20 37,27 37,52 27,44" fill="#A7ABB2" class="concreteStroke"/>
+  <polygon points="37,27 52,19 52,43 37,52" fill="url(#concreteSide)" class="concreteStroke"/>
+  <path class="rebar" d="M32 18 V7 M38 15 V5 M45 16 V7 M49 19 V9 M29 22 V11"/>
+  <circle class="speck" cx="34" cy="31" r="1"/><circle class="speck" cx="47" cy="27" r="1"/><circle class="speck" cx="43" cy="39" r=".9"/>
+  <path class="teal" d="M27 20 L42 13 L52 19" opacity=".9"/>
+
+    </g>
+    <text x="85.0" y="172" text-anchor="middle" fill="#D7D8DB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25">Kolon</text>
+  </g>
+
+  <g transform="translate(832 206)">
+    <rect width="170" height="198" rx="8" fill="url(#cardGrad)" stroke="#373C45" stroke-width="1.4"/>
+    <g transform="translate(53 31)">
+      
+  <polygon points="15,30 43,16 54,23 27,38" fill="url(#concrete)" class="concreteStroke"/>
+  <polygon points="15,30 27,38 27,49 15,41" fill="#93979F" class="concreteStroke"/>
+  <polygon points="27,38 54,23 54,35 27,49" fill="url(#concreteSide)" class="concreteStroke"/>
+  <path class="rebar" d="M11 38 H24 M10 43 H23 M12 48 H24"/>
+  <circle class="speck" cx="37" cy="27" r=".9"/><circle class="speck" cx="47" cy="31" r=".9"/><circle class="speck" cx="28" cy="35" r=".8"/>
+  <path class="teal" d="M15 30 L43 16 L54 23" opacity=".9"/>
+
+    </g>
+    <text x="85.0" y="172" text-anchor="middle" fill="#D7D8DB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25">Kiriş</text>
+  </g>
+
+  <g transform="translate(1027 206)">
+    <rect width="170" height="198" rx="8" fill="url(#cardGrad)" stroke="#373C45" stroke-width="1.4"/>
+    <g transform="translate(53 31)">
+      
+  <polygon points="21,14 47,9 51,16 25,22" fill="url(#concrete)" class="concreteStroke"/>
+  <polygon points="21,14 25,22 25,51 21,44" fill="#93979F" class="concreteStroke"/>
+  <polygon points="25,22 51,16 51,45 25,51" fill="url(#concreteSide)" class="concreteStroke"/>
+  <path class="rebar" d="M27 17 V7 M33 16 V5 M39 15 V6 M45 14 V4 M50 16 V8"/>
+  <circle class="speck" cx="33" cy="28" r="1"/><circle class="speck" cx="44" cy="25" r="1"/><circle class="speck" cx="38" cy="39" r="1"/><circle class="speck" cx="47" cy="37" r=".9"/>
+  <path class="teal" d="M21 14 L47 9 L51 16" opacity=".9"/>
+
+    </g>
+    <text x="85.0" y="172" text-anchor="middle" fill="#D7D8DB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25">Perde</text>
+  </g>
+
+  <g transform="translate(1222 206)">
+    <rect width="170" height="198" rx="8" fill="url(#cardGrad)" stroke="#373C45" stroke-width="1.4"/>
+    <g transform="translate(53 31)">
+      
+  <polygon points="15,21 50,9 56,15 21,28" fill="#D7D8DB" class="concreteStroke"/>
+  <polygon points="15,21 21,28 21,50 15,43" fill="#93979F" class="concreteStroke"/>
+  <polygon points="21,28 56,15 56,37 21,50" fill="url(#concreteSide)" class="concreteStroke"/>
+  <path class="thin" d="M25 30 L56 18 M22 39 L55 27 M22 49 L54 36 M31 25 L31 46 M41 22 L41 42 M51 18 L51 38" opacity=".75"/>
+  <path class="teal" d="M15 21 L50 9 L56 15"/>
+
+    </g>
+    <text x="85.0" y="172" text-anchor="middle" fill="#D7D8DB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25">Duvar</text>
+  </g>
+
+  <g transform="translate(52 442)">
+    <rect width="170" height="198" rx="8" fill="url(#cardGrad)" stroke="#373C45" stroke-width="1.4"/>
+    <g transform="translate(53 31)">
+      
+  <polygon points="12,30 44,16 56,24 24,39" fill="url(#concrete)" class="concreteStroke"/>
+  <polygon points="12,30 24,39 24,49 12,40" fill="#93979F" class="concreteStroke"/>
+  <polygon points="24,39 56,24 56,34 24,49" fill="url(#concreteSide)" class="concreteStroke"/>
+  <path class="teal" d="M12 30 L44 16 L56 24" opacity=".95"/>
+  <circle cx="18" cy="40" r="2.7" fill="#17191D" stroke="#C7C8CC" stroke-width="1.6"/>
+  <circle cx="25" cy="43" r="2.7" fill="#17191D" stroke="#C7C8CC" stroke-width="1.6"/>
+  <circle cx="32" cy="40" r="2.7" fill="#17191D" stroke="#C7C8CC" stroke-width="1.6"/>
+  <circle class="speck" cx="30" cy="28" r=".8"/><circle class="speck" cx="39" cy="25" r=".8"/><circle class="speck" cx="47" cy="28" r=".8"/>
+
+    </g>
+    <text x="85.0" y="172" text-anchor="middle" fill="#D7D8DB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25">Döşeme</text>
+  </g>
+
+  <g transform="translate(247 442)">
+    <rect width="170" height="198" rx="8" fill="url(#cardGrad)" stroke="#373C45" stroke-width="1.4"/>
+    <g transform="translate(53 31)">
+      
+  <polygon points="12,39 38,28 54,36 28,49" fill="url(#concrete)" class="concreteStroke"/>
+  <polygon points="12,39 28,49 28,56 12,46" fill="#93979F" class="concreteStroke"/>
+  <polygon points="28,49 54,36 54,43 28,56" fill="url(#concreteSide)" class="concreteStroke"/>
+  <polygon points="27,21 37,17 44,21 34,26" fill="url(#concrete)" class="concreteStroke"/>
+  <polygon points="27,21 34,26 34,41 27,36" fill="#A7ABB2" class="concreteStroke"/>
+  <polygon points="34,26 44,21 44,36 34,41" fill="url(#concreteSide)" class="concreteStroke"/>
+  <path class="rebar" d="M31 19 V8 M36 17 V7 M41 20 V10"/>
+  <path class="teal" d="M12 39 L38 28 L54 36"/>
+
+    </g>
+    <text x="85.0" y="172" text-anchor="middle" fill="#D7D8DB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25">Temel</text>
+  </g>
+
+  <g transform="translate(442 442)">
+    <rect width="170" height="198" rx="8" fill="url(#cardGrad)" stroke="#373C45" stroke-width="1.4"/>
+    <g transform="translate(53 31)">
+      
+  <path class="thin" d="M13 18 H49 M13 32 H49 M13 46 H49"/>
+  <path class="dash" d="M32 11 V53"/>
+  <path class="teal" filter="url(#softGlow)" d="M32 7 V24 M32 24 L25 17 M32 24 L39 17"/>
+  <path class="teal" filter="url(#softGlow)" d="M32 57 V40 M32 40 L25 47 M32 40 L39 47"/>
+
+    </g>
+    <text x="85.0" y="172" text-anchor="middle" fill="#D7D8DB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25">Align</text>
+  </g>
+
+  <g transform="translate(637 442)">
+    <rect width="170" height="198" rx="8" fill="url(#cardGrad)" stroke="#373C45" stroke-width="1.4"/>
+    <g transform="translate(53 31)">
+      
+  <rect class="white" x="15" y="15" width="28" height="28" rx="2"/>
+  <rect x="28" y="28" width="25" height="25" rx="2" fill="none" stroke="#7294EC" stroke-width="3" stroke-linejoin="round" filter="url(#softGlow)"/>
+
+    </g>
+    <text x="85.0" y="172" text-anchor="middle" fill="#D7D8DB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25">Kopyala</text>
+  </g>
+
+  <g transform="translate(832 442)">
+    <rect width="170" height="198" rx="8" fill="url(#cardGrad)" stroke="#373C45" stroke-width="1.4"/>
+    <g transform="translate(53 31)">
+      
+  <path class="white" d="M20 24 H47"/>
+  <path class="white" d="M27 24 V19 H40 V24"/>
+  <path class="white" d="M23 28 L25 52 H43 L45 28"/>
+  <path class="teal" d="M30 34 V46 M37 34 V46"/>
+
+    </g>
+    <text x="85.0" y="172" text-anchor="middle" fill="#D7D8DB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25">Sil</text>
+  </g>
+
+  <g transform="translate(1027 442)">
+    <rect width="170" height="198" rx="8" fill="url(#cardGrad)" stroke="#373C45" stroke-width="1.4"/>
+    <g transform="translate(53 31)">
+      
+  <path class="dash" d="M16 20 L47 13 L55 38 L34 52 L12 43 Z"/>
+  <g filter="url(#softGlow)">
+    <circle cx="16" cy="20" r="3" fill="#0B0C0E" stroke="#7294EC" stroke-width="2.6"/>
+    <circle cx="47" cy="13" r="3" fill="#0B0C0E" stroke="#7294EC" stroke-width="2.6"/>
+    <circle cx="55" cy="38" r="3" fill="#0B0C0E" stroke="#7294EC" stroke-width="2.6"/>
+    <circle cx="34" cy="52" r="3" fill="#0B0C0E" stroke="#7294EC" stroke-width="2.6"/>
+    <circle cx="12" cy="43" r="3" fill="#0B0C0E" stroke="#7294EC" stroke-width="2.6"/>
+  </g>
+
+    </g>
+    <text x="85.0" y="172" text-anchor="middle" fill="#D7D8DB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25">Arsa</text>
+  </g>
+
+  <g transform="translate(1222 442)">
+    <rect width="170" height="198" rx="8" fill="url(#cardGrad)" stroke="#373C45" stroke-width="1.4"/>
+    <g transform="translate(53 31)">
+      
+  <path class="thin" d="M14 18 V48 M50 18 V48 M32 32 V52"/>
+  <path class="teal" filter="url(#softGlow)" d="M17 32 H47 M17 32 L24 25 M17 32 L24 39 M47 32 L40 25 M47 32 L40 39"/>
+  <path class="dash" d="M32 32 V52"/>
+
+    </g>
+    <text x="85.0" y="172" text-anchor="middle" fill="#D7D8DB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25">Ölçü</text>
+  </g>
+
+  <g transform="translate(52 678)">
+    <rect width="170" height="198" rx="8" fill="url(#cardGrad)" stroke="#373C45" stroke-width="1.4"/>
+    <g transform="translate(53 31)">
+      
+  <rect x="24" y="24" width="16" height="16" fill="none" stroke="{GRAY}" stroke-width="2.2" stroke-dasharray="4 4"/>
+  <path class="white" d="M18 18 L9 9 M9 9 H19 M9 9 V19"/>
+  <path class="white" d="M46 18 L55 9 M55 9 H45 M55 9 V19"/>
+  <path class="white" d="M18 46 L9 55 M9 55 H19 M9 55 V45"/>
+  <path class="white" d="M46 46 L55 55 M55 55 H45 M55 55 V45"/>
+
+    </g>
+    <text x="85.0" y="172" text-anchor="middle" fill="#D7D8DB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25">Sığdır</text>
+  </g>
+
+  <g transform="translate(247 678)">
+    <rect width="170" height="198" rx="8" fill="url(#cardGrad)" stroke="#373C45" stroke-width="1.4"/>
+    <g transform="translate(53 31)">
+      
+  <path class="teal" filter="url(#softGlow)" d="M32 8 L51 19 V41 L32 53 L13 41 V19 Z"/>
+  <path class="thin" d="M32 30 L32 53 M32 30 L51 19 M32 30 L13 19"/>
+
+    </g>
+    <text x="85.0" y="172" text-anchor="middle" fill="#D7D8DB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25">3D</text>
+  </g>
+
+  <g transform="translate(442 678)">
+    <rect width="170" height="198" rx="8" fill="url(#cardGrad)" stroke="#373C45" stroke-width="1.4"/>
+    <g transform="translate(53 31)">
+      
+  <path class="thin" d="M22 10 H49 V46" opacity=".55"/>
+  <path class="thin" d="M17 15 H44 V51" opacity=".75"/>
+  <rect class="white" x="12" y="20" width="27" height="34" rx="1"/>
+  <path class="teal" d="M26 45 H38 M26 50 H38 M26 40 H38 M26 40 V54"/>
+
+    </g>
+    <text x="85.0" y="172" text-anchor="middle" fill="#D7D8DB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25">Paftalar</text>
+  </g>
+
+  <g transform="translate(637 678)">
+    <rect width="170" height="198" rx="8" fill="url(#cardGrad)" stroke="#373C45" stroke-width="1.4"/>
+    <g transform="translate(53 31)">
+      
+  <path class="teal" filter="url(#softGlow)" d="M30 16 L16 30 L30 44"/>
+  <path class="thin" d="M17 30 H37 A15 15 0 1 1 26 55"/>
+
+    </g>
+    <text x="85.0" y="172" text-anchor="middle" fill="#D7D8DB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25">Geri</text>
+  </g>
+
+  <g transform="translate(832 678)">
+    <rect width="170" height="198" rx="8" fill="url(#cardGrad)" stroke="#373C45" stroke-width="1.4"/>
+    <g transform="translate(53 31)">
+      
+  <path class="teal" filter="url(#softGlow)" d="M34 16 L48 30 L34 44"/>
+  <path class="thin" d="M47 30 H27 A15 15 0 1 0 38 55"/>
+
+    </g>
+    <text x="85.0" y="172" text-anchor="middle" fill="#D7D8DB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25">İleri</text>
+  </g>
+
+  <line x1="38" y1="933" x2="1450" y2="933" stroke="#3D6FE8" stroke-width="1.5" opacity=".85"/>
+  <text x="48" y="979" fill="#C7C8CC" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17">Designed for clarity. Built for precision.</text>
+  <line x1="390" y1="964" x2="390" y2="979" stroke="#3D6FE8" stroke-width="1" opacity=".65"/>
+  <line x1="420" y1="971" x2="459" y2="971" stroke="#7294EC" stroke-width="6"/>
+  <text x="475" y="978" fill="#C7C8CC" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17">Primary (Accent)</text>
+  <line x1="660" y1="971" x2="699" y2="971" stroke="#D7D8DB" stroke-width="6"/>
+  <text x="715" y="978" fill="#C7C8CC" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17">Secondary (Neutral)</text>
+  <text x="995" y="979" fill="#7294EC" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17" font-weight="700">StructFlow</text>
+  <text x="1105" y="979" fill="#C7C8CC" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17">• Professional Structural/CAD Software</text>
+</svg>

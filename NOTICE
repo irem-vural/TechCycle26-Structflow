@@ -1,0 +1,18 @@
+TechCycle26-Structflow
+Copyright (c) 2026 TechCycle26-Structflow project authors.
+All Rights Reserved.
+
+This repository is publicly visible but is not released under an open-source
+license. The project's original source code and original assets are proprietary.
+See LICENSE for the governing terms.
+
+Third-party software and materials remain subject to their own licenses and
+terms. The npm dependency license inventory is maintained in:
+
+  docs/legal/THIRD-PARTY-NOTICES.md
+  docs/legal/THIRD-PARTY-NOTICES.json
+
+The engineering calculations and outputs provided by this software are intended
+for analysis, preliminary design, and decision-support workflows. They do not
+replace project-specific verification by an authorized engineer or compliance
+with applicable codes, standards, and regulations.

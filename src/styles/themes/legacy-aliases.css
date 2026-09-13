@@ -1,0 +1,83 @@
+/* Deprecated compatibility aliases. New code must use --sf-* semantic/domain tokens. */
+:root[data-theme='structflow-dark'],
+:root[data-theme='structflow-light'] {
+  --sf-legacy-panel: var(--sf-bg-panel);
+  --sf-legacy-canvas: var(--sf-bg-canvas);
+}
+
+/*
+ * Transitional mappings for pre-token workspace panels. These selectors keep
+ * established command panels visually consistent while they are migrated to
+ * semantic utilities one component at a time. Do not use these values in new
+ * UI; use the corresponding --sf-* token directly instead.
+ */
+[data-theme] aside[class*='bg-[#11181f]'],
+[data-theme] aside[class*='bg-[#10171e]'] {
+  background-color: var(--sf-bg-sidebar) !important;
+  color: var(--sf-text-primary) !important;
+}
+
+[data-theme] [class*='bg-[#0c1218]'],
+[data-theme] [class*='bg-[#111921]'],
+[data-theme] [class*='bg-[#0b1117]'],
+[data-theme] [class*='bg-[#0b0e13]'],
+[data-theme] [class*='bg-[#0b0f19]'],
+[data-theme] [class*='bg-[#0c101a]'] {
+  background-color: var(--sf-bg-input) !important;
+}
+
+[data-theme] [class*='border-white/[0.03]'],
+[data-theme] [class*='border-white/[0.05]'],
+[data-theme] [class*='border-white/[0.055]'],
+[data-theme] [class*='border-white/[0.06]'],
+[data-theme] [class*='border-white/[0.07]'],
+[data-theme] [class*='border-white/[0.08]'] {
+  border-color: var(--sf-divider) !important;
+}
+
+[data-theme] [class*='border-zinc-800'] {
+  border-color: var(--sf-border-default) !important;
+}
+
+[data-theme] [class*='border-zinc-700'],
+[data-theme] [class*='border-zinc-600'] {
+  border-color: var(--sf-border-strong) !important;
+}
+
+[data-theme] .text-zinc-50,
+[data-theme] .text-zinc-100,
+[data-theme] .text-zinc-200 {
+  color: var(--sf-text-primary) !important;
+}
+
+[data-theme] .text-zinc-300,
+[data-theme] .text-zinc-400 {
+  color: var(--sf-text-secondary) !important;
+}
+
+[data-theme] .text-zinc-500,
+[data-theme] .text-zinc-600 {
+  color: var(--sf-text-muted) !important;
+}
+
+[data-theme] .text-zinc-700 {
+  color: var(--sf-text-disabled) !important;
+}
+
+[data-theme] [class*='hover:bg-white/[0.02]']:hover,
+[data-theme] [class*='hover:bg-white/[0.03]']:hover,
+[data-theme] [class*='hover:bg-white/[0.04]']:hover,
+[data-theme] [class*='hover:bg-white/[0.05]']:hover {
+  background-color: var(--sf-bg-hover) !important;
+}
+
+[data-theme] [class*='bg-white/[0.04]'],
+[data-theme] [class*='bg-white/[0.08]'] {
+  background-color: var(--sf-bg-selected) !important;
+}
+
+[data-theme] [class*='focus:border-sky'],
+[data-theme] [class*='focus:border-cyan'],
+[data-theme] [class*='focus:border-emerald'] {
+  --tw-ring-color: var(--sf-border-focus);
+}

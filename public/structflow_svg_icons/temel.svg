@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="11.6417mm" height="11.0125mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 26.79 25.34"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#D7D8DB;stroke-width:1.03;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .str2 {stroke:#67696F;stroke-width:0.61;stroke-linecap:round;stroke-miterlimit:22.9256}
+    .str1 {stroke:#7294EC;stroke-width:1.22;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .fil4 {fill:none;fill-rule:nonzero}
+    .fil0 {fill:#93979F;fill-rule:nonzero}
+    .fil5 {fill:#A7ABB2;fill-rule:nonzero}
+    .fil3 {fill:url(#id0);fill-rule:nonzero}
+    .fil2 {fill:url(#id1);fill-rule:nonzero}
+    .fil6 {fill:url(#id2);fill-rule:nonzero}
+    .fil1 {fill:url(#id3);fill-rule:nonzero}
+   ]]>
+  </style>
+  <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="8.28" y1="3.94" x2="18.51" y2="24.39">
+   <stop offset="0" style="stop-opacity:1; stop-color:#F5F5F6"/>
+   <stop offset="0.54902" style="stop-opacity:1; stop-color:#C7C8CC"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#67696F"/>
+  </linearGradient>
+  <linearGradient id="id1" gradientUnits="userSpaceOnUse" xlink:href="#id0" x1="10.84" y1="0.61" x2="15.37" y2="9.17">
+  </linearGradient>
+  <linearGradient id="id2" gradientUnits="userSpaceOnUse" x1="10.37" y1="8.24" x2="20.11" y2="13.11">
+   <stop offset="0" style="stop-opacity:1; stop-color:#D7D8DB"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#535B68"/>
+  </linearGradient>
+  <linearGradient id="id3" gradientUnits="userSpaceOnUse" xlink:href="#id2" x1="12.38" y1="11.08" x2="24.15" y2="26.38">
+  </linearGradient>
+ </defs>
+ <g id="Katman_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polygon class="fil0 str0" points="0.61,14.47 10.35,20.56 10.35,24.82 0.61,18.73 "/>
+  <polygon class="fil1 str0" points="10.35,20.56 26.18,12.65 26.18,16.91 10.35,24.82 "/>
+  <polygon class="fil2 str0" points="7.93,4.59 14.02,2.15 18.28,4.59 12.19,7.63 "/>
+  <polygon class="fil3 str0" points="0.61,14.47 16.44,7.78 26.18,12.65 10.35,20.56 "/>
+  <polyline class="fil4 str1" points="0.61,14.47 16.44,7.78 26.18,12.65 "/>
+  <polygon class="fil5 str0" points="7.93,4.59 12.19,7.63 12.19,16.76 7.93,13.72 "/>
+  <polygon class="fil6 str0" points="12.19,7.63 18.28,4.59 18.28,13.72 12.19,16.76 "/>
+  <line class="fil4 str2" x1="10.72" y1="4.86" x2="10.72" y2= "1.6" />
+  <line class="fil4 str2" x1="12.26" y1="4.26" x2="12.26" y2= "1.01" />
+  <line class="fil4 str2" x1="13.77" y1="3.56" x2="13.77" y2= "0.3" />
+  <line class="fil4 str2" x1="15.62" y1="4.81" x2="15.62" y2= "1.55" />
+  <line class="fil4 str2" x1="12.31" y1="6.21" x2="12.31" y2= "2.96" />
+  <line class="fil4 str2" x1="13.8" y1="5.46" x2="13.8" y2= "2.2" />
+ </g>
+</svg>

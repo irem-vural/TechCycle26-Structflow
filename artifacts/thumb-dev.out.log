@@ -1,0 +1,9 @@
+
+> istinat-duvari@1.0.0 dev
+> next dev --webpack -p 3107
+
+▲ Next.js 16.2.10 (webpack)
+- Local:         http://localhost:3107
+- Network:       http://100.65.166.35:3107
+✓ Ready in 465ms
+[?25h

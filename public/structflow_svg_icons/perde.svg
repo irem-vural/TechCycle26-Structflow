@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="11.377mm" height="11.9658mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 22.52 23.68"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#D7D8DB;stroke-width:0.89;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .str2 {stroke:#67696F;stroke-width:0.52;stroke-linecap:round;stroke-miterlimit:22.9256}
+    .str1 {stroke:#7294EC;stroke-width:1.05;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .fil3 {fill:none;fill-rule:nonzero}
+    .fil1 {fill:#93979F;fill-rule:nonzero}
+    .fil0 {fill:#D7D8DB;fill-rule:nonzero}
+    .fil2 {fill:url(#id0);fill-rule:nonzero}
+   ]]>
+  </style>
+  <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="3.67" y1="4.91" x2="22" y2="23.24">
+   <stop offset="0" style="stop-opacity:1; stop-color:#D7D8DB"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#535B68"/>
+  </linearGradient>
+ </defs>
+ <g id="Katman_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polygon class="fil0 str0" points="0.52,8.05 18.85,1.77 22,4.91 3.67,11.72 "/>
+  <polygon class="fil1 str0" points="0.52,8.05 3.67,11.72 3.67,23.24 0.52,19.57 "/>
+  <polygon class="fil2 str0" points="3.67,11.72 22,4.91 22,16.43 3.67,23.24 "/>
+  <polyline class="fil3 str1" points="0.52,8.05 18.85,1.77 22,4.91 "/>
+  <line class="fil3 str2" x1="4.18" y1="10.41" x2="4.18" y2= "7.61" />
+  <line class="fil3 str2" x1="2.57" y1="8.54" x2="2.57" y2= "5.74" />
+  <line class="fil3 str2" x1="18.55" y1="3.06" x2="18.55" y2= "0.26" />
+  <line class="fil3 str2" x1="19.91" y1="4.52" x2="19.91" y2= "1.72" />
+  <line class="fil3 str2" x1="12.85" y1="7.28" x2="12.85" y2= "4.48" />
+  <line class="fil3 str2" x1="11.22" y1="5.54" x2="11.22" y2= "2.74" />
+  <line class="fil3 str2" x1="16.74" y1="5.78" x2="16.74" y2= "2.98" />
+  <line class="fil3 str2" x1="15.27" y1="4.13" x2="15.27" y2= "1.33" />
+  <line class="fil3 str2" x1="7.41" y1="6.72" x2="7.41" y2= "3.92" />
+  <line class="fil3 str2" x1="8.64" y1="8.74" x2="8.64" y2= "5.94" />
+  <line class="fil3 str2" x1="6.35" y1="9.6" x2="6.35" y2= "6.8" />
+  <line class="fil3 str2" x1="5.38" y1="7.59" x2="5.38" y2= "4.79" />
+  <line class="fil3 str2" x1="9.48" y1="6.22" x2="9.48" y2= "3.42" />
+  <line class="fil3 str2" x1="10.69" y1="8.12" x2="10.69" y2= "5.31" />
+  <line class="fil3 str2" x1="14.91" y1="6.66" x2="14.91" y2= "3.86" />
+  <line class="fil3 str2" x1="13.39" y1="4.76" x2="13.39" y2= "1.96" />
+  <line class="fil3 str2" x1="17.02" y1="3.55" x2="17.02" y2= "0.75" />
+  <line class="fil3 str2" x1="18.48" y1="5.18" x2="18.48" y2= "2.38" />
+ </g>
+</svg>

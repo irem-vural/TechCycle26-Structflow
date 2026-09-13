@@ -168,7 +168,7 @@ Tam koşullar için [`LICENSE`](LICENSE) dosyasını okuyun. Üçüncü taraf ba
 
 ## Sorumluluk reddi
 
-Bu yazılım mühendislik karar desteği sağlar; profesyonel mühendislik hizmetinin, saha doğrulamasının veya mevzuata uygun nihai proje kontrolünün yerine geçmez. Yazılımın belirli bir projede kullanılabilirliği ve ürettiği sonuçların doğrulanması kullanıcı sorumluluğundadır.
+Bu yazılım, ön değerlendirme ve hızlı yaklaşık hesaplamalar için mühendislik karar desteği sağlar. Sunulan sonuçlar ön tasarım ve karşılaştırma amacıyla kullanılmalı; nihai uygulama öncesinde proje koşulları ve ilgili teknik gereklilikler doğrulanmalıdır.
 
 ---
 
